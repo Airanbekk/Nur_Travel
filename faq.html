@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <title>FAQ Page</title>
+</head>
+<body> 
+    
+    <header>
+        <div class="logo">NurTravel</div>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/Admin/Documents/index.html">Home</a></li>
+                <li><a href="file:///C:/Users/Admin/Documents/About%20Us.html">About Us</a></li>
+                <li><a href="file:///C:/Users/Admin/Documents/Contact%20Us.html">Contact Us</a></li>
+                <li><a href="file:///C:/Users/Admin/Documents/faq.html">FAQ</a></li>
+                 <li><a href="file:///C:/Users/Admin/Documents/signup.html?#" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg> 
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        </button>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-text">
+            <h1>Any questions? <br> We got you. </h1>
+            <h4>Feel free to reach out with any inquiries! We're here to assist you with any questions or concerns you may have. Our dedicated team is ready to provide the support you need to make your experience enjoyable and hassle-free.</h4>
+            <button id="changeColorBtn">Change Background Color</button>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header dark-text" >What is NurTravel?</div>
+                <div class="accordion-content dark-text" >NurTravel is a travel agency that offers customized tours, adventure packages, and holiday destinations worldwide. We aim to provide an unforgettable travel experience with expert guidance and personalized services.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header dark-text">How can I book a tour with NurTravel?</div>
+                <div class="accordion-content dark-text" >You can book a tour with us by visiting our website, browsing the destinations, and filling out the booking form. You can also reach out to our customer service team to help plan your trip and finalize the booking process.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header dark-text">What should I do if I need to cancel or reschedule my booking?</div>
+                <div class="accordion-content dark-text" >If you need to cancel or reschedule your booking, please contact our customer service team at least 48 hours before your tour departure. We will assist you with the necessary changes according to our cancellation policy.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header dark-text">Is there a refund policy for canceled tours?</div>
+                <div class="accordion-content dark-text" >Yes, NurTravel has a refund policy for canceled tours. The amount refunded will depend on the cancellation period and the terms of the booking. Please check the cancellation policy on our website or contact us for more details.</div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-container"> 
+        <h1> Subscribe to be the first to know about the latest news! </h1>
+    <button id="subscribeBtn" class="btn-open-popup" onclick="togglePopup()">
+        Subscribe
+    </button>    
+</div>
+    <div id="popupOverlay" class="overlay-container">
+        <div class="popup-box">
+            <h2 style="color: pink;">Popup Form</h2>
+            <form class="form-container">
+                <label class="form-label" for="name">Username:</label>
+                <input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>
+
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required>
+
+                <button class="btn-submit" type="submit">Submit</button>
+            </form>
+
+            <button class="btn-close-popup" onclick="togglePopup()">Close</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>Contact: nurpeijszulkarnaj@gmail.com | Phone: +77478415230</p> <p id="currentDateTime"></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="darkmode.js" defer> </script>
+
+</body>
+</html>
